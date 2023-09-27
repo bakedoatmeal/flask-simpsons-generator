@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div >
+   <div class="quote">
+      <blockquote>{{ sentence }}</blockquote>
+      <form action="/tweet" method="post">
+         <input type="hidden" name="sentence" value="{{ sentence }}">
+         <button type="submit">Tweet this</button>
+      </form>
+   </div>
+</div>
+
+<img src={{ url_for('static', filename='simpsons.png') }} />
+
+{% endblock %}
