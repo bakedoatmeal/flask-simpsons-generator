@@ -4,9 +4,9 @@
 <div >
    <div class="quote">
       <blockquote>{{ sentence }}</blockquote>
-      <form action="/tweet" method="post">
+      <form action="/" method="get">
          <input type="hidden" name="sentence" value="{{ sentence }}">
-         <button type="submit">Tweet this</button>
+         <button type="submit">Regenerate</button>
       </form>
    </div>
 </div>
